@@ -1,6 +1,6 @@
 {
-  "name": "auth-context",
-  "version": "1.0.5",
+  "name": "react-authentication-context",
+  "version": "1.0.6",
   "description": "A context Provider for React that makes the call to your server to fetch the user as well as validates the user on every visit.",
   "main": "build/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/helsey33/auth-context"
+    "url": "https://github.com/helsey33/react-authentication-context"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
