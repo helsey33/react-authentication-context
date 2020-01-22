@@ -1,6 +1,6 @@
 {
   "name": "react-authentication-context",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A context Provider for React that makes the call to your server to fetch the user as well as validates the user on every visit.",
   "main": "build/index.js",
   "scripts": {

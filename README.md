@@ -1,11 +1,11 @@
-# Auth Context
+# React Authentication Context
 
 A context Provider for React that makes the call to your server to fetch the user as well as validates the user on every visit.
 
 ## Installation
 
 ```bash
-npm install --save auth-context
+npm install --save react-authentication-context
 ```
 
 [DEMO](https://codesandbox.io/s/auth-context-demo-fnt3i?fontsize=14&hidenavigation=1&theme=dark)
@@ -13,7 +13,7 @@ npm install --save auth-context
 ## Usage
 
 ```Javascript
-import AuthContextProvider from "auth-context";
+import AuthContextProvider from "react-authentication-context";
 ```
 
 Wrap the Provider around your main App and pass in the validation url as well as fetch options for your endpoint.
@@ -59,7 +59,7 @@ The context also provides a function fetchUser that can be used to login or regi
 ```Javascript
 import React, { useContext } from "react";
 
-import { AuthContext } from "auth-context";
+import { AuthContext } from "react-authentication-context";
 
 export default function HelloThere() {
   const { fetchUser } = useContext(AuthContext);
@@ -125,10 +125,8 @@ You can consume these state objects as well as their functions just as every con
 
 ```Javascript
 import React, { useContext } from "react";
-import { AuthContext } from "auth-context";
+import { AuthContext } from "react-authentication-context";
 
-import Login from "./Login";
-import Loading from "./Loading";
 
 export default function Dashboard() {
   const { user, fetching,error, setUser,setFetching,setError } = useContext(AuthContext);
